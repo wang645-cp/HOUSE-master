@@ -12,7 +12,7 @@ public interface IHuserinfoService {
     String API_PREFIX = "/whl/user";
 
     @ApiOperation(value = "获取人员信息")
-    @PostMapping(value = API_PREFIX + "selectUserinfo")
+    @PostMapping(value = API_PREFIX + "/selectUserinfo")
     ResultDTO<UserinfoDTO> getUserinfo ();
 
 }
