@@ -7,4 +7,6 @@ import java.util.List;
 public interface HuserinfoService {
 
     List<Userinfo> getUserinfoAll();
+
+    Userinfo getUserinfoOne(String name,String pass);
 }

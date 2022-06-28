@@ -34,4 +34,9 @@ public class HuserinfoController implements IHuserinfoService {
         }
         return ResultDTO.success(userinfoDTOList);
     }
+
+    @Override
+    public ResultDTO<UserinfoDTO> loginUserinfo(String name, String pass) {
+        return ResultDTO.success(huserinfoService.getUserinfoOne(name,pass));
+    }
 }
